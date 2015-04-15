@@ -1,8 +1,8 @@
 {
   "name": "sonata",
-  "version": "0.0.1",
-  "description": "A simple web framework for Javascript",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "A simple web framework",
+  "main": "sonata.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/modernfidelity/sonata/issues"
   },
-  "homepage": "https://github.com/modernfidelity/sonata"
+  "homepage": "https://github.com/modernfidelity/sonata",
+  "dependencies": {
+    "commander": "^2.8.0"
+  },
+ "bin": {
+      "sonata": "sonata.js"
+  }
 }
