@@ -5,6 +5,7 @@
  * @param  {String} html
  * @return {String}
  */
+
 module.exports = {
 
   hello: function () {

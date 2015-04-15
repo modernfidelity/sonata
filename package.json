@@ -15,7 +15,7 @@
     "web",
     "framework"
   ],
-  "author": "@modernfidelity",
+  "author": "Mark Rushton <mark@modernfidelity.co.uk> (http://www.modernfidelity.co.uk/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/modernfidelity/sonata/issues"
