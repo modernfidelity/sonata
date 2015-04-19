@@ -27,7 +27,7 @@ $ sonata startproject [NAME]
 Creates a project folder within the current directory
 
 ```
-$ sonata startmodule [NAME]
+$ sonata startapp [NAME]
 ```
 
 Generates a JS app stub when called from within a project folder.
