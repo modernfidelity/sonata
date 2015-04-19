@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/modernfidelity/sonata",
   "dependencies": {
+    "colors": "^1.0.3",
     "commander": "^2.8.0",
     "fs-extra": "^0.18.2"
   },

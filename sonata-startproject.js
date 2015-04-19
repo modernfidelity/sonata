@@ -7,8 +7,13 @@
  * @type {exports}
  */
 
+// Includes
 var program = require('commander');
 var fs = require('fs-extra');
+var colors = require('colors');
+var config = require('./sonata-config.js');
+
+// Variables
 var dir = "./";
 
 program
@@ -28,24 +33,35 @@ if (program.force) console.log('  force: install');
 
 
 // Create 'named' project folder
-pkgs.forEach(function(pkg){
+pkgs.forEach(function (pkg) {
 
+
+    var path = dir + pkg;
 
     // Main folder
-    fs.mkdir(dir + pkg);
+    if (fs.existsSync(path)) {
 
-    // Sub folders
-    fs.mkdir(dir + pkg + "/.sonata");
+        console.log("  Error : Project exists in this location...".red);
 
-    var stream = fs.createWriteStream(".info");
 
-    stream.once('open', function(fd) {
-        stream.write("My first row\n");
-        stream.write("My second row\n");
-        stream.end();
-    });
+    } else {
 
-    console.log('  Creating Project: %s', pkg);
+        fs.mkdir(path);
+
+        fs.mkdir(path + "/.sonata");
+
+        var stream = fs.createWriteStream(dir + pkg + "/.sonata/config");
+
+        stream.once('open', function (fd) {
+
+            stream.write("version : " + config.version() + "\n");
+            stream.end();
+        });
+
+        console.log(colors.green('  Creating Project: %s'), pkg);
+
+    }
+
 
 });
 
