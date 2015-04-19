@@ -1,19 +1,22 @@
 #!/usr/bin/env node
 
 /**
- * Module dependencies.
+ *
+ * SONATA JS
+ *
  */
 
 var program = require('commander');
 
-console.log('');
-console.log('sonata framework admin');
-console.log('----------------------');
+//console.log('');
+//console.log('sonata framework admin');
+//console.log('----------------------');
 
 program
-    .version('0.0.1')
-    .command('startproject [name]', 'install one or more packages')
-    .command('startapp [name]', 'search with optional query')
+    .version('0.0.2')
+    .command('startproject [name]', 'Create project folder within the current directory')
+    .command('startapp [name]', 'Create app for use within the project')
+    .command('startmod [name]', 'Create module for use in & across apps')
     .command('list', 'list apps installed within the current project')
 
     .parse(process.argv);

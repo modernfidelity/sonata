@@ -22,9 +22,10 @@
   },
   "homepage": "https://github.com/modernfidelity/sonata",
   "dependencies": {
-    "commander": "^2.8.0"
+    "commander": "^2.8.0",
+    "fs-extra": "^0.18.2"
   },
- "bin": {
-      "sonata": "sonata.js"
+  "bin": {
+    "sonata": "sonata.js"
   }
 }
