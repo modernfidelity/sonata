@@ -2,18 +2,18 @@
 
 /**
  *
- * SONATA JS
+ * SONATA JS FRAMEWORK
  *
  */
 
 var program = require('commander');
 
-//console.log('');
-//console.log('sonata framework admin');
-//console.log('----------------------');
+var frameworkVersion = require('./package.json').version;
+
+
 
 program
-    .version('0.0.2')
+    .version(frameworkVersion)
     .command('startproject [name]', 'Create project folder within the current directory')
     .command('startapp [name]', 'Create app for use within the project')
     .command('startmod [name]', 'Create module for use in & across apps')
