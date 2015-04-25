@@ -46,9 +46,11 @@ pkgs.forEach(function (pkg) {
 
     } else {
 
+        // Create project files + folders
         fs.mkdir(path);
-
         fs.mkdir(path + "/.sonata");
+        fs.mkdir(path + "/builds");
+        fs.mkdir(path + "/modules");
 
         var stream = fs.createWriteStream(dir + pkg + "/.sonata/config");
 
