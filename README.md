@@ -1,4 +1,4 @@
-Sonata
+Sonata JS
 =========
 
 A simple web framework for vanilla javascript (ES6/ES7)

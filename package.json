@@ -24,7 +24,8 @@
   "dependencies": {
     "colors": "^1.0.3",
     "commander": "^2.8.0",
-    "fs-extra": "^0.18.2"
+    "fs-extra": "^0.18.2",
+    "gulp": "^3.8.11"
   },
   "bin": {
     "sonata": "sonata.js"
