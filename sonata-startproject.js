@@ -16,6 +16,36 @@ var config = require('./sonata-config.js');
 // Variables
 var dir = "./";
 
+
+/**
+ * Load template file.
+ */
+
+function loadTemplate(name) {
+    return fs.readFileSync(path.join(__dirname, '..', 'templates', name), 'utf-8');
+}
+
+/**
+ * Check if the given directory `path` is empty.
+ *
+ * @param {String} path
+ * @param {Function} fn
+ */
+
+function emptyDirectory(path, fn) {
+    fs.readdir(path, function(err, files){
+        if (err && 'ENOENT' != err.code) throw err;
+        fn(!files || !files.length);
+    });
+}
+
+
+
+
+
+
+
+
 program
     .option('-f, --force', 'force installation')
     .parse(process.argv);
