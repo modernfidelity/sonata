@@ -46,9 +46,24 @@ $ sonata startproject myWebApp
 
 This will output : 
 
-```
 
-```
+ - Created : myWebApp
+ - Created : myWebApp/package.json
+ - Created : myWebApp/app.js
+ - Created : myWebApp/views
+ - Created : myWebApp/models
+ - Created : myWebApp/controllers
+ - Created : myWebApp/builds
+ - Created : myWebApp/routes
+ - Created : myWebApp/routes/index.js
+
+## In Progress
+
+The following are currently being worked on : 
+
+- Example files for the folders i.e. a default controller.js
+- Traceur compiles of ES6 classes for project final builds
+- improving folder stucture / layout
 
 
  
