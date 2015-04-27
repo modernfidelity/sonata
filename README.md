@@ -3,6 +3,8 @@ Sonata JS
 
 A simple web framework for object oriented javascript (ES6/ES7)
 
+[![Build Status](https://travis-ci.org/modernfidelity/sonata.svg?branch=master)](https://travis-ci.org/modernfidelity/sonata)
+
 ## Installation
 
 ```
