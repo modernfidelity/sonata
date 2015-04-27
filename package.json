@@ -1,10 +1,10 @@
 {
   "name": "sonata",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple web framework",
   "main": "sonata.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-ci": "mocha --reporter spec --check-leaks test/"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,12 @@
     "colors": "^1.0.3",
     "commander": "^2.8.0",
     "fs-extra": "^0.18.2",
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "jspm": "^0.15.4",
+    "mkdirp": "^0.5.0",
+    "sorted-object": "^1.0.0",
+    "systemjs": "^0.16.9",
+    "traceur": "0.0.89"
   },
   "bin": {
     "sonata": "sonata.js"
