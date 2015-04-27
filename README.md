@@ -26,14 +26,30 @@ $ sonata startproject [NAME]
 
 Creates a project folder within the current directory
 
-```
-$ sonata startapp [NAME]
-```
-
-Generates a JS app stub when called from within a project folder.
 
 ```
 $ sonata startmodule [NAME]
 ```
 
 Generates a JS module stub when called from within a project folder. 
+
+
+## Project Structure
+
+The Sonata CLI tool generators a project with the following files structure for you: 
+
+```
+$ sonata startproject myWebApp 
+```
+
+This will output : 
+
+```
+
+```
+
+
+ 
+ 
+
+

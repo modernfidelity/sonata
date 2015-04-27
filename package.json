@@ -4,7 +4,7 @@
   "description": "A simple web framework",
   "author": "@modernfidelity <hello@modernfidelity.co.uk> (http://www.modernfidelity.co.uk)",
   "scripts": {
-    "test-ci": "mocha --reporter spec --check-leaks test/"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,10 @@
     "commander": "^2.8.0",
     "fs-extra": "^0.18.2",
     "gulp": "^3.8.11",
+    "jasmine": "^2.2.1",
     "jspm": "^0.15.4",
     "mkdirp": "^0.5.0",
+    "mocha": "^2.2.4",
     "sorted-object": "^1.0.0",
     "systemjs": "^0.16.9",
     "traceur": "0.0.89"
