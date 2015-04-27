@@ -2,7 +2,7 @@
   "name": "sonata",
   "version": "0.0.3",
   "description": "A simple web framework",
-  "main": "sonata.js",
+  "author": "@modernfidelity <hello@modernfidelity.co.uk> (http://www.modernfidelity.co.uk)",
   "scripts": {
     "test-ci": "mocha --reporter spec --check-leaks test/"
   },
@@ -13,9 +13,12 @@
   "keywords": [
     "javascript",
     "web",
-    "framework"
+    "framework",
+    "OOP",
+    "browser",
+    "frontend",
+    "clientside"
   ],
-  "author": "@modernfidelity <hello@modernfidelity.co.uk> (http://www.modernfidelity.co.uk)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/modernfidelity/sonata/issues"
@@ -32,7 +35,14 @@
     "systemjs": "^0.16.9",
     "traceur": "0.0.89"
   },
+  "files": [
+    "LICENSE-MIT",
+    "bin/",
+    "templates/"
+  ],
+  "main": "sonata",
+  "preferGlobal": true,
   "bin": {
-    "sonata": "sonata.js"
+    "sonata": "./bin/sonata"
   }
 }

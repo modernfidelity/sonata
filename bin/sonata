@@ -8,7 +8,7 @@
 
 var program = require('commander');
 
-var frameworkVersion = require('./package.json').version;
+var frameworkVersion = require('./../package.json').version;
 
 
 
