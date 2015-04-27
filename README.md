@@ -1,12 +1,12 @@
 Sonata JS
 =========
 
-A simple web framework for vanilla javascript (ES6/ES7)
+A simple web framework for object oriented javascript (ES6/ES7)
 
 ## Installation
 
 ```
-$ npm install sonata --save
+$ npm install -g sonata 
 ```
     
 ## Usage
